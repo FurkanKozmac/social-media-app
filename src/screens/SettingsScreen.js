@@ -34,7 +34,7 @@ const SettingsScreen = () => {
         querySnapshot.forEach((doc) => {
           const userData = doc.data();
           setUserInfo(userData);
-          console.log("User data:", userData);
+        //  console.log("User data:", userData);
         });
       } catch (error) {
         console.error("Cannot fetch data", error);

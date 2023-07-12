@@ -10,9 +10,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { collection, getDocs } from "firebase/firestore";
-import {
-  FIREBASE_FIRESTORE,
-} from "../../firebaseConfig";
+import { FIREBASE_FIRESTORE } from "../../firebaseConfig";
 import {
   useFonts,
   Poppins_400Regular,
@@ -67,16 +65,14 @@ const FeedScreen = () => {
                   styles.userContainer,
                   {
                     flex: 0.4,
-                    borderBottomWidth: 0.5,
-                    borderBottomColor: "#7161ef",
                   },
                 ]}
               >
                 <Text
                   style={{
                     fontFamily: "Poppins_700Bold",
-                    color: "#7161ef",
-                    paddingLeft: 20,
+                    color: "#8370ef",
+                    paddingLeft: 15,
                     fontSize: 12,
                   }}
                 >
@@ -88,8 +84,6 @@ const FeedScreen = () => {
                   styles.userContainer,
                   {
                     flex: 4.5,
-                    borderBottomWidth: 0.5,
-                    borderBottomColor: "#7161ef",
                   },
                 ]}
               >
@@ -109,8 +103,8 @@ const FeedScreen = () => {
                 <Text
                   style={{
                     fontFamily: "Poppins_600SemiBold",
-                    color: "#7161ef",
-                    paddingLeft: 10,
+                    color: "#8370ef",
+                    paddingLeft: 15,
                     fontSize: 12,
                   }}
                 >
@@ -131,6 +125,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
+    backgroundColor: "#fef9ff",
   },
 
   header: {
@@ -151,11 +146,9 @@ const styles = StyleSheet.create({
   postContainer: {
     width: Dimensions.get("screen").width,
     height: 500,
-    borderTopColor: "#7161ef",
-    borderBottomColor: "#7161ef",
-    borderTopWidth: 0.5,
-    borderBottomWidth: 0.5,
-    marginBottom: 10,
+    borderBottomColor: "#8370ef",
+    borderBottomWidth: 0.2,
+    marginBottom: 5,
   },
 
   userContainer: {
